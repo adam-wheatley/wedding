@@ -4,7 +4,7 @@ import Img from './ash-adam.jpg';
 
 const PageWrapper = styled.main`
   text-align: center;
-  padding: 100px;
+  padding-top: 100px;
 `;
 
 const StyledImg = styled.img`
@@ -14,6 +14,8 @@ const StyledImg = styled.img`
   border-bottom-left-radius: 15px 255px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+  max-width: 500px;
+  width: 95%;
 `;
 
 export const App = () => {
