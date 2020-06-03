@@ -1,4 +1,6 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
+
 import styled from 'styled-components';
 import Img from './ash-adam.jpg';
 import Love from './love.png';
@@ -24,6 +26,9 @@ const Title = styled.h1`
 
   @media only screen and (max-width: 400px) {
     font-size: 80px;
+  }
+  &:hover {
+    cursor: pointer;
   }
 `;
 
@@ -93,7 +98,9 @@ const Tile = (props) => {
   );
 };
 
-const Main = () => {
+const Main = ({ history }) => {
+  const onClick = () => history.push('/');
+
   const [tiles, setTiles] = React.useState([]);
 
   React.useEffect(() => {
@@ -113,7 +120,7 @@ const Main = () => {
   return (
     <Wrapper>
       <div>
-        <Title>Adam + Ashley</Title>
+        <Title onClick={onClick}>Adam + Ashley</Title>
         <Subheading fontSize='25px' ul>
           ACCOMMODATION RECOMENDATIONS
         </Subheading>
@@ -126,4 +133,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default withRouter(Main);

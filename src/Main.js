@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import Img from './ash-adam.jpg';
 import Love from './love.png';
@@ -24,6 +25,10 @@ const Title = styled.h1`
 
   @media only screen and (max-width: 400px) {
     font-size: 80px;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 `;
 
@@ -74,13 +79,15 @@ const Button = styled(Link)`
   font-weight: 800;
   background: #626267;
   color: white;
+  text-decoration: none;
 `;
 
-const Main = () => {
+const Main = ({ history }) => {
+  const onClick = () => history.push('/');
   return (
     <Wrapper>
       <div>
-        <Title>Adam + Ashley</Title>
+        <Title onClick={onClick}>Adam + Ashley</Title>
         <StyledImg src={Img} />
 
         <Subheading fontSize='30px'>SAVE THE DATE</Subheading>
@@ -100,4 +107,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default withRouter(Main);
