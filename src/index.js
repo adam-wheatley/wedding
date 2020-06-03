@@ -5,6 +5,7 @@ import { Normalize } from 'styled-normalize';
 import App from './Main';
 import Globals from './styles/Global';
 import { theme } from './styles/Theme';
+import './main.css';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>

@@ -11,7 +11,7 @@ const Wrapper = styled.main`
 `;
 
 const Title = styled.h1`
-  font-family: TomatoSoup-Regular;
+  font-family: TomatoSoup;
   font-size: 150px;
   font-weight: 500;
   line-height: 0.3;
