@@ -88,7 +88,7 @@ const TileWrapper = styled.div`
 const Msg = styled.p`
   font-family: 'Champagne & Limousines';
   max-width: 500px;
-  margin: 0 auto 25px;
+  margin: 0 auto;
 `;
 
 const Tile = (props) => {

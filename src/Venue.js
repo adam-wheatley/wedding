@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import styled from 'styled-components';
-import Img from './ash-adam.jpg';
-import Love from './love.png';
 import { Link } from 'react-router-dom';
+
+import styled from 'styled-components';
+import Img from './gg.jpg';
 
 const Wrapper = styled.main`
   max-width: 700px;
@@ -26,7 +26,6 @@ const Title = styled.h1`
   @media only screen and (max-width: 400px) {
     font-size: 80px;
   }
-
   &:hover {
     cursor: pointer;
   }
@@ -36,7 +35,7 @@ const Subheading = styled.h2`
   font-family: 'Champagne & Limousines';
   font-size: ${(p) => (p.fontSize ? p.fontSize : '35px')};
   font-weight: unset;
-  line-height: 0.7;
+  line-height: 1;
 
   ${(p) =>
     p.pt &&
@@ -47,11 +46,12 @@ const Subheading = styled.h2`
   ${(p) =>
     p.ul &&
     `
+    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     padding-bottom: 10px;
-    width: 160px;
+    max-width: 400px;
     margin: 0 auto 35px;
-    padding-top: 35px;
+    padding-top: 10px;
   `}
 `;
 
@@ -62,51 +62,46 @@ const StyledImg = styled.img`
   border-bottom-left-radius: 15px 255px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+  max-width: 350px;
   width: 90%;
-  max-width: 250px;
-  margin-bottom: 25px;
+  margin: 25px 10px;
 `;
 
-const Button = styled(Link)`
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  border-bottom-right-radius: 225px 15px;
-  border-bottom-left-radius: 15px 255px;
-  border: none;
-  font-family: 'Champagne & Limousines';
-  padding: 15px;
-  margin: 0 15px;
-  font-weight: 800;
-  background: #626267;
-  color: white;
-  text-decoration: none;
-`;
-
-const Otherbtn = styled(Link)`
+const Address = styled.p`
   font-family: 'Champagne & Limousines';
 `;
 
 const Main = ({ history }) => {
   const onClick = () => history.push('/');
+
   return (
     <Wrapper>
       <div>
         <Title onClick={onClick}>Adam + Ashley</Title>
+        <Subheading fontSize='25px' ul>
+          GG's Yard
+        </Subheading>
         <StyledImg src={Img} />
 
-        <Subheading fontSize='30px'>SAVE THE DATE</Subheading>
-        <Subheading fontSize='30px'>25. 06. 2021</Subheading>
-        <img src={Love} width='25' />
-        <Subheading fontSize='25px'>GG's YARD</Subheading>
-        <Subheading fontSize='25px'>GATEHOUSE OF FLEET</Subheading>
-        <Otherbtn to='/venue'>Find out more</Otherbtn>
-        <Subheading fontSize='20px' ul>
-          RECOMMENDATIONS
-        </Subheading>
-        <Button to='/accomodation'>ACCOMODATION</Button>
-        <Button>HAIR & MAKEUP</Button>
-
-        {/* <Subheading>Friday, 25th of June, 2021</Subheading> */}
+        <Address>
+          GG's Yard is around 2 hour's from Glasgow, and 3 hours from Perth.{' '}
+          <br />
+          The venue itself is beautiful converted farm with views of the ocean.{' '}
+          <br />
+          It has unique snugs to stay, but unfortunately only enough for the
+          wedding party. <br />
+          For other accomodation please see <Link to='/accomodation'>here</Link>
+          . <br />
+        </Address>
+        <Subheading fontSize='25px'>Where?</Subheading>
+        <Address>
+          GG’s Yard <br />
+          Laggan <br /> Gatehouse of Fleet <br />
+          Dumfries & Galloway <br />
+          DG7 2ES <br />
+          Scotland <br />
+          <a href='https://ggsyard.co.uk/'>https://ggsyard.co.uk/</a>
+        </Address>
       </div>
     </Wrapper>
   );

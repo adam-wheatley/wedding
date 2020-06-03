@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
 import App from './Main';
 import Accomodation from './Accomodation';
+import Venue from './Venue';
 
 import Globals from './styles/Global';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Normalize />
         <Globals />
         <Switch>
+          <Route exact path='/venue' component={Venue} />
           <Route exact path='/accomodation' component={Accomodation} />
           <Route path='/' component={App} />
         </Switch>
