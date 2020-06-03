@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
-import App from './App';
+import App from './Main';
 import Globals from './styles/Global';
 import { theme } from './styles/Theme';
 
