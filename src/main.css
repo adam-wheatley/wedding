@@ -2,3 +2,8 @@
   font-family: 'TomatoSoup';
   src: url('./fonts/TomatoSoup-Regular.otf');
 }
+
+@font-face {
+  font-family: 'Champagne & Limousines';
+  src: url('./fonts/Champagne\ &\ Limousines.ttf');
+}
