@@ -85,14 +85,24 @@ const TileWrapper = styled.div`
   }
 `;
 
+const Msg = styled.p`
+  font-family: 'Champagne & Limousines';
+  max-width: 500px;
+  margin: 0 auto 25px;
+`;
+
 const Tile = (props) => {
   return (
     <TileWrapper>
-      <p>Name: {props.name}</p>
+      <p>
+        Name: <b>{props.name}</b>
+      </p>
       <p>Type: {props.type}</p>
       <p>
         Website: <a href={props.url}>{props.url} </a>
       </p>
+      <p>Telephone: {props.number}</p>
+      <p>Rooms: {props.rooms}</p>
       <p>1 Night Stay: {props.onenight}</p>
     </TileWrapper>
   );
@@ -110,7 +120,9 @@ const Main = ({ history }) => {
         name: key,
         type: data[key].classification,
         url: data[key].url,
+        number: data[key].phone,
         onenight: data[key].onenight,
+        rooms: data[key].Rooms,
       });
       console.log(`${key}: ${value}`);
     }
@@ -125,6 +137,10 @@ const Main = ({ history }) => {
           ACCOMMODATION RECOMENDATIONS
         </Subheading>
         <h5>Provided by GG's Yard</h5>
+        <Msg>
+          If you are having problem's finding accomodation please just get in
+          touch with either of us and we will gladly help.
+        </Msg>
         {tiles.map((tile) => (
           <Tile {...tile} />
         ))}
