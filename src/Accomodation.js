@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from './ash-adam.jpg';
 import Love from './love.png';
+import data from './data';
 
 const Wrapper = styled.main`
   max-width: 700px;
@@ -50,18 +51,6 @@ const Subheading = styled.h2`
   `}
 `;
 
-const StyledImg = styled.img`
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  border-bottom-right-radius: 225px 15px;
-  border-bottom-left-radius: 15px 255px;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  width: 90%;
-  max-width: 250px;
-  margin-bottom: 25px;
-`;
-
 const Button = styled.button`
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
@@ -76,7 +65,51 @@ const Button = styled.button`
   color: white;
 `;
 
+const TileWrapper = styled.div`
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+  background: #eee;
+  color: #626267;
+  text-align: left;
+  padding: 2.5px 15px;
+  margin: 10px;
+  @media only screen and (min-width: 600px) {
+    line-height: 0.7;
+  }
+`;
+
+const Tile = (props) => {
+  return (
+    <TileWrapper>
+      <p>Name: {props.name}</p>
+      <p>Type: {props.type}</p>
+      <p>
+        Website: <a href={props.url}>{props.url} </a>
+      </p>
+      <p>1 Night Stay: {props.onenight}</p>
+    </TileWrapper>
+  );
+};
+
 const Main = () => {
+  const [tiles, setTiles] = React.useState([]);
+
+  React.useEffect(() => {
+    const tileData = [];
+    for (let [key, value] of Object.entries(data)) {
+      tileData.push({
+        name: key,
+        type: data[key].classification,
+        url: data[key].url,
+        onenight: data[key].onenight,
+      });
+      console.log(`${key}: ${value}`);
+    }
+    console.log({ tileData });
+    setTiles(tileData);
+  }, []);
   return (
     <Wrapper>
       <div>
@@ -85,6 +118,9 @@ const Main = () => {
           ACCOMMODATION RECOMENDATIONS
         </Subheading>
         <h5>Provided by GG's Yard</h5>
+        {tiles.map((tile) => (
+          <Tile {...tile} />
+        ))}
       </div>
     </Wrapper>
   );

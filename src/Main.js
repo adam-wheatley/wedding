@@ -91,7 +91,7 @@ const Main = () => {
         <Subheading fontSize='20px' ul>
           RECOMMENDATIONS
         </Subheading>
-        <Button>ACCOMODATION</Button>
+        <Button to='/accomodation'>ACCOMODATION</Button>
         <Button>HAIR & MAKEUP</Button>
 
         {/* <Subheading>Friday, 25th of June, 2021</Subheading> */}

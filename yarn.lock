@@ -1172,6 +1172,34 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@lourd/equal-by-keys@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@lourd/equal-by-keys/-/equal-by-keys-0.1.2.tgz#c3ca22ae4df93b7c18a25a8febb549a3d6cb9cf3"
+  integrity sha512-EVCsIzpJzMjJZVN1b2TPrBG/UyRsrEHoeGgYwcT/ibaX5Nd4Le3Z6EMz0X1OSeLvC5p9dnFEBk5u3smjVMOuJg==
+
+"@lourd/load-script@^0.1.0":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@lourd/load-script/-/load-script-0.1.4.tgz#ebc491946ef66d6489aed908d758344de7605f00"
+  integrity sha512-9Jc8nS9AUYggv/zo8IrWtLo1UXALcpRIRBYiv/Ig0QIQp46Wu1ttB2ByOBYTDUy1sSh5byfhM8v1U9rjnHikOA==
+
+"@lourd/react-google-api@^0.1.0":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@lourd/react-google-api/-/react-google-api-0.1.4.tgz#66bf51ea9fb74cbf97ffd2101c98223387a4fa02"
+  integrity sha512-C1/mqvKGiRxNpCJ0o2Y3Ll04wPpAACMxEko2QX83vOu5rbuyHcPulm0AY0ttkag9BnRSUd0Nh9EepX1G5uJXTA==
+  dependencies:
+    "@lourd/load-script" "^0.1.0"
+    prop-types "^15.6.0"
+    react-broadcast "^0.7.0-rc.2"
+
+"@lourd/react-google-sheet@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@lourd/react-google-sheet/-/react-google-sheet-0.4.0.tgz#b3c08e51821ef0cbc2a308f5e7ae0f00b1593eee"
+  integrity sha512-O1KRFaFY5nOosPHyXy7Hr1e0ngCY80EAJviELEZSVvceQnEdRShW+3aQIxkEnfjyYqYg6j9KoFuFqgIpO5t/yg==
+  dependencies:
+    "@lourd/equal-by-keys" "^0.1.2"
+    "@lourd/react-google-api" "^0.1.0"
+    prop-types "^15.6.0"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -8276,7 +8304,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.3"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8441,6 +8469,14 @@ react-app-polyfill@^1.0.6:
     raf "^3.4.1"
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
+
+react-broadcast@^0.7.0-rc.2:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/react-broadcast/-/react-broadcast-0.7.1.tgz#732c1f4d3c9dbb9dbf0b92540c7c2490fb746dfb"
+  integrity sha512-GhYhRBSSwys6dP++mlC2BNlKMgDfUCKAmOB7eyvgatsWk4TKY+sWVmkGkblP+QduHSBF/Rc+yTE2fZR+8+7Brw==
+  dependencies:
+    prop-types "^15.6.0"
+    warning "^3.0.0"
 
 react-create-component-from-tag-prop@^1.4.0:
   version "1.4.0"
@@ -10347,6 +10383,13 @@ walker@^1.0.7, walker@~1.0.5:
   integrity sha1-L3+bj9ENZ3JisYqITijRlhjgKPs=
   dependencies:
     makeerror "1.0.x"
+
+warning@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
+  integrity sha1-MuU3fLVy3kqwR1O9+IIcAe1gW3w=
+  dependencies:
+    loose-envify "^1.0.0"
 
 watchpack@^1.6.0:
   version "1.6.0"
