@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from './ash-adam.jpg';
 import Love from './love.png';
-import { Link } from 'react-router-dom';
 
 const Wrapper = styled.main`
   max-width: 700px;
@@ -31,7 +30,7 @@ const Subheading = styled.h2`
   font-family: 'Champagne & Limousines';
   font-size: ${(p) => (p.fontSize ? p.fontSize : '35px')};
   font-weight: unset;
-  line-height: 0.7;
+  line-height: 1;
 
   ${(p) =>
     p.pt &&
@@ -42,11 +41,12 @@ const Subheading = styled.h2`
   ${(p) =>
     p.ul &&
     `
+    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     padding-bottom: 10px;
-    width: 160px;
+    max-width: 400px;
     margin: 0 auto 35px;
-    padding-top: 35px;
+    padding-top: 10px;
   `}
 `;
 
@@ -62,7 +62,7 @@ const StyledImg = styled.img`
   margin-bottom: 25px;
 `;
 
-const Button = styled(Link)`
+const Button = styled.button`
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
   border-bottom-right-radius: 225px 15px;
@@ -81,20 +81,10 @@ const Main = () => {
     <Wrapper>
       <div>
         <Title>Adam + Ashley</Title>
-        <StyledImg src={Img} />
-
-        <Subheading fontSize='30px'>SAVE THE DATE</Subheading>
-        <Subheading fontSize='30px'>25. 06. 2021</Subheading>
-        <img src={Love} width='25' />
-        <Subheading fontSize='25px'>GG's YARD</Subheading>
-        <Subheading fontSize='25px'>GATEHOUSE OF FLEET</Subheading>
-        <Subheading fontSize='20px' ul>
-          RECOMMENDATIONS
+        <Subheading fontSize='25px' ul>
+          ACCOMMODATION RECOMENDATIONS
         </Subheading>
-        <Button>ACCOMODATION</Button>
-        <Button>HAIR & MAKEUP</Button>
-
-        {/* <Subheading>Friday, 25th of June, 2021</Subheading> */}
+        <h5>Provided by GG's Yard</h5>
       </div>
     </Wrapper>
   );
