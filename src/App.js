@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Grid from 'styled-components-grid';
 import Img from './img/ash-adam.jpg';
 import Love from './img/love.png';
 import Header from './Header';
