@@ -1,35 +1,10 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Header from './Header';
 
 import styled from 'styled-components';
-import Img from './gg.jpg';
-
-const Wrapper = styled.main`
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 50px;
-`;
-
-const Title = styled.h1`
-  font-family: TomatoSoup;
-  font-size: 150px;
-  font-weight: 500;
-  line-height: 0.3;
-
-  @media only screen and (max-width: 600px) {
-    font-size: 120px;
-  }
-
-  @media only screen and (max-width: 400px) {
-    font-size: 80px;
-  }
-  &:hover {
-    cursor: pointer;
-  }
-`;
+import Img from './img/gg.jpg';
+import { Wrapper } from './styles/PageStyles';
 
 const Subheading = styled.h2`
   font-family: 'Champagne & Limousines';
@@ -71,40 +46,36 @@ const Address = styled.p`
   font-family: 'Champagne & Limousines';
 `;
 
-const Main = ({ history }) => {
-  const onClick = () => history.push('/');
+const Venue = () => (
+  <Wrapper>
+    <div>
+      <Header />
+      <Subheading fontSize='25px' ul>
+        GG's Yard
+      </Subheading>
+      <StyledImg src={Img} />
 
-  return (
-    <Wrapper>
-      <div>
-        <Title onClick={onClick}>Adam + Ashley</Title>
-        <Subheading fontSize='25px' ul>
-          GG's Yard
-        </Subheading>
-        <StyledImg src={Img} />
+      <Address>
+        GG's Yard is around 2 hour's from Glasgow, and 3 hours from Perth.{' '}
+        <br />
+        The venue itself is beautiful converted farm with views of the ocean.{' '}
+        <br />
+        It has unique snugs to stay, but unfortunately only enough for the
+        wedding party. <br />
+        For other accomodation please see <Link to='/accomodation'>here</Link>
+        . <br />
+      </Address>
+      <Subheading fontSize='25px'>Where?</Subheading>
+      <Address>
+        GG’s Yard <br />
+        Laggan <br /> Gatehouse of Fleet <br />
+        Dumfries & Galloway <br />
+        DG7 2ES <br />
+        Scotland <br />
+        <a href='https://ggsyard.co.uk/'>https://ggsyard.co.uk/</a>
+      </Address>
+    </div>
+  </Wrapper>
+);
 
-        <Address>
-          GG's Yard is around 2 hour's from Glasgow, and 3 hours from Perth.{' '}
-          <br />
-          The venue itself is beautiful converted farm with views of the ocean.{' '}
-          <br />
-          It has unique snugs to stay, but unfortunately only enough for the
-          wedding party. <br />
-          For other accomodation please see <Link to='/accomodation'>here</Link>
-          . <br />
-        </Address>
-        <Subheading fontSize='25px'>Where?</Subheading>
-        <Address>
-          GG’s Yard <br />
-          Laggan <br /> Gatehouse of Fleet <br />
-          Dumfries & Galloway <br />
-          DG7 2ES <br />
-          Scotland <br />
-          <a href='https://ggsyard.co.uk/'>https://ggsyard.co.uk/</a>
-        </Address>
-      </div>
-    </Wrapper>
-  );
-};
-
-export default withRouter(Main);
+export default Venue;

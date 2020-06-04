@@ -1,36 +1,8 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
-
 import styled from 'styled-components';
-import Img from './ash-adam.jpg';
-import Love from './love.png';
-import data from './data';
-
-const Wrapper = styled.main`
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 50px;
-`;
-
-const Title = styled.h1`
-  font-family: TomatoSoup;
-  font-size: 150px;
-  font-weight: 500;
-  line-height: 0.3;
-
-  @media only screen and (max-width: 600px) {
-    font-size: 120px;
-  }
-
-  @media only screen and (max-width: 400px) {
-    font-size: 80px;
-  }
-  &:hover {
-    cursor: pointer;
-  }
-`;
+import Header from './Header';
+import data from './accomodation-data';
+import { Wrapper } from './styles/PageStyles';
 
 const Subheading = styled.h2`
   font-family: 'Champagne & Limousines';
@@ -56,20 +28,6 @@ const Subheading = styled.h2`
   `}
 `;
 
-const Button = styled.button`
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  border-bottom-right-radius: 225px 15px;
-  border-bottom-left-radius: 15px 255px;
-  border: none;
-  font-family: 'Champagne & Limousines';
-  padding: 15px;
-  margin: 0 15px;
-  font-weight: 800;
-  background: #626267;
-  color: white;
-`;
-
 const TileWrapper = styled.div`
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
@@ -78,8 +36,11 @@ const TileWrapper = styled.div`
   background: #eee;
   color: #626267;
   text-align: left;
-  padding: 2.5px 15px;
-  margin: 10px;
+  padding: 10px 20px;
+  margin: 25px auto;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 2.5px 5px;
   @media only screen and (min-width: 600px) {
     line-height: 0.7;
   }
@@ -108,9 +69,7 @@ const Tile = (props) => {
   );
 };
 
-const Main = ({ history }) => {
-  const onClick = () => history.push('/');
-
+const Accomodation = ({ history }) => {
   const [tiles, setTiles] = React.useState([]);
 
   React.useEffect(() => {
@@ -132,7 +91,7 @@ const Main = ({ history }) => {
   return (
     <Wrapper>
       <div>
-        <Title onClick={onClick}>Adam + Ashley</Title>
+        <Header />
         <Subheading fontSize='25px' ul>
           ACCOMMODATION RECOMENDATIONS
         </Subheading>
@@ -149,4 +108,4 @@ const Main = ({ history }) => {
   );
 };
 
-export default withRouter(Main);
+export default Accomodation;

@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
-import App from './Main';
+import App from './App';
 import Accomodation from './Accomodation';
 import Venue from './Venue';
 
 import Globals from './styles/Global';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { theme } from './styles/Theme';
-import './main.css';
+import './styles/main.css';
 
 ReactDOM.render(
   <Router>
