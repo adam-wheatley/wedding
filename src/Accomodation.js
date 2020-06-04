@@ -83,7 +83,6 @@ const Accomodation = ({ history }) => {
         onenight: data[key].onenight,
         rooms: data[key].Rooms,
       });
-      console.log(`${key}: ${value}`);
     }
     setTiles(tileData);
   }, []);
