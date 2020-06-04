@@ -85,7 +85,6 @@ const Accomodation = ({ history }) => {
       });
       console.log(`${key}: ${value}`);
     }
-    console.log({ tileData });
     setTiles(tileData);
   }, []);
   return (
