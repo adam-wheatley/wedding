@@ -22,7 +22,7 @@ const StyledHeader = styled.h1`
 `;
 
 const Header = ({ history }) => (
-  <StyledHeader onClick={() => history.push('/')}>Adam + Ashley</StyledHeader>
+  <StyledHeader onClick={() => history.push('/')}>Save the Date</StyledHeader>
 );
 
 export default withRouter(Header);

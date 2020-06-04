@@ -68,7 +68,7 @@ const App = () => {
       <div>
         <Header />
         <StyledImg src={Img} />
-        <Subheading fontSize='30px'>SAVE THE DATE</Subheading>
+        <Subheading fontSize='30px'>ASHLEY + ADAM</Subheading>
         <Subheading fontSize='30px'>25. 06. 2021</Subheading>
         <img src={Love} width='25' alt='Love Heart' />
         <Subheading fontSize='25px'>GG's YARD</Subheading>
