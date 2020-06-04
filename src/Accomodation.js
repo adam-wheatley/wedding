@@ -74,7 +74,7 @@ const Accomodation = ({ history }) => {
 
   React.useEffect(() => {
     const tileData = [];
-    for (let [key, value] of Object.entries(data)) {
+    for (let [key] of Object.entries(data)) {
       tileData.push({
         name: key,
         type: data[key].classification,
