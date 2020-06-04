@@ -21,11 +21,12 @@ const Subheading = styled.h2`
   ${(p) =>
     p.ul &&
     `
+    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     padding-bottom: 10px;
-    width: 160px;
-    margin: 0 auto 35px;
-    padding-top: 35px;
+    max-width: 400px;
+    margin: 35px auto;
+    padding-top: 10px;
   `}
 `;
 

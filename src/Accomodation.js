@@ -52,23 +52,6 @@ const Msg = styled.p`
   margin: 0 auto;
 `;
 
-const Tile = (props) => {
-  return (
-    <TileWrapper>
-      <p>
-        Name: <b>{props.name}</b>
-      </p>
-      <p>Type: {props.type}</p>
-      <p>
-        Website: <a href={props.url}>{props.url} </a>
-      </p>
-      <p>Telephone: {props.number}</p>
-      <p>Rooms: {props.rooms}</p>
-      <p>1 Night Stay: {props.onenight}</p>
-    </TileWrapper>
-  );
-};
-
 const Accomodation = ({ history }) => {
   const [tiles, setTiles] = React.useState([]);
 
@@ -82,6 +65,7 @@ const Accomodation = ({ history }) => {
         number: data[key].phone,
         onenight: data[key].onenight,
         rooms: data[key].Rooms,
+        distance: data[key].distance,
       });
     }
     setTiles(tileData);
@@ -98,8 +82,22 @@ const Accomodation = ({ history }) => {
           If you are having problem's finding accomodation please just get in
           touch with either of us and we will gladly help.
         </Msg>
-        {tiles.map((tile) => (
-          <Tile {...tile} />
+        {tiles.map(({ name, type, url, number, rooms, onenight, distance }) => (
+          <div style={{ margin: '0 10px' }}>
+            <TileWrapper>
+              <p>
+                Name: <b>{name}</b>
+              </p>
+              <p>Type: {type}</p>
+              <p>
+                Website: <a href={url}>{url} </a>
+              </p>
+              <p>Telephone: {number}</p>
+              <p>Distance from Venue: {distance}</p>
+              <p>Rooms: {rooms}</p>
+              <p>1 Night Stay: {onenight}</p>
+            </TileWrapper>
+          </div>
         ))}
       </div>
     </Wrapper>

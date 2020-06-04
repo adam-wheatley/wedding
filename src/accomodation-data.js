@@ -2,7 +2,7 @@ export default {
   Auchenlarie: {
     Who: 'Mia or any of the team',
     Where: 'On our doorstep',
-    'Distance ': '1 mile',
+    distance: '1 mile',
     Rooms:
       'Everything from 2 bed caravan/lodge to self catering cottage with hot tub',
     classification: 'Caravan site with lodges & farm steading conversion',
@@ -19,7 +19,7 @@ export default {
   Mossyard: {
     Who: 'Joanna or Elaine',
     Where: 'On our doorstep',
-    'Distance ': '0.75 miles',
+    distance: '0.75 miles',
     Rooms: 'Self catering cottages/lodges & caravans',
     classification: 'Caravan site with lodges & farm steading conversion',
     Opening: 'All year',
@@ -36,7 +36,7 @@ export default {
   'Mossyard Holiday cottages': {
     Who: 'Amy',
     Where: 'On our doorstep',
-    'Distance ': 0.75,
+    distance: 0.75,
     Rooms: 'Holiday cottages',
     classification: 'Self catering',
     Opening: 'All year',
@@ -52,7 +52,7 @@ export default {
   'Cragganmore Holiday House': {
     Who: 'Duncan',
     Where: 'Carrick Shore',
-    'Distance ': '10 miles by road - 2 miles as the crow flies',
+    distance: '10 miles by road - 2 miles as the crow flies',
     Rooms: 'Holiday cottages',
     classification: 'Self catering',
     Opening: 'All year',
@@ -67,7 +67,7 @@ export default {
   'High Auchenlarie ': {
     Who: 'Liz and Steven',
     Where: 'On our doorstep',
-    'Distance ': '1 mile',
+    distance: '1 mile',
     Rooms: 'cottage -sleeps 6',
     classification: 'Self catering',
     Opening: 'All year',
@@ -82,7 +82,7 @@ export default {
   'Bobbin Guest house': {
     Who: 'Helen',
     Where: 'Gatehouse of Fleet',
-    'Distance ': '4 miles East',
+    distance: '4 miles East',
     Rooms: '5 rooms',
     classification: 'B&B',
     Opening: 'Open all year',
@@ -97,7 +97,7 @@ export default {
   'Ship Inn': {
     Who: null,
     Where: 'Gatehouse of Fleet',
-    'Distance ': '4 miles East',
+    distance: '4 miles East',
     Rooms: null,
     classification: null,
     Opening: null,
@@ -112,7 +112,7 @@ export default {
   'Murray Arms Hotel': {
     Who: null,
     Where: 'Gatehouse of Fleet',
-    'Distance ': '4 miles East',
+    distance: '4 miles East',
     Rooms: '11 Rooms',
     classification: 'Hotel',
     Opening: 'Open all year',
@@ -127,7 +127,7 @@ export default {
   'Cally Palace Hotel ': {
     Who: 'Josephine ',
     Where: 'Gatehouse of Fleet',
-    'Distance ': '4 miles ',
+    distance: '4 miles ',
     Rooms: null,
     classification: null,
     Opening: null,
@@ -142,7 +142,7 @@ export default {
   'The Waterhouse ': {
     Who: 'Martin and Sharon',
     Where: 'Kirkcudbright',
-    'Distance ': '14miles ',
+    distance: '14miles ',
     Rooms: null,
     classification: null,
     Opening: null,
@@ -157,7 +157,7 @@ export default {
   'Rusko Stables ': {
     Who: 'Liz Gilbey ',
     Where: 'Gatehouse of Fleet',
-    'Distance ': '4 miles',
+    distance: '4 miles',
     Rooms: '3x double/twin',
     classification: null,
     Opening: null,
@@ -172,7 +172,7 @@ export default {
   Harmony: {
     Who: null,
     Where: 'Carsluith',
-    'Distance ': '4 miles West',
+    distance: '4 miles West',
     Rooms: '2 rooms',
     classification: 'B&B',
     Opening: 'Open all year',
@@ -187,7 +187,7 @@ export default {
   'Bank of Fleet': {
     Who: 'Kirsty',
     Where: 'Gatehouse of Fleet',
-    'Distance ': '4 miles East',
+    distance: '4 miles East',
     Rooms: '5 rooms',
     classification: '3* Hotel',
     Opening: 'Open all year',
@@ -202,7 +202,7 @@ export default {
   Fludha: {
     Who: 'Jackie',
     Where: 'Kirkcudbright',
-    'Distance ': '14 miles South East',
+    distance: '14 miles South East',
     Rooms: '6 rooms',
     classification: '5* B&B',
     Opening: 'closed end dec - end feb',
@@ -217,7 +217,7 @@ export default {
   Anchorlee: {
     Who: 'Olive',
     Where: 'Kirkcudbright',
-    'Distance ': '14 miles South East',
+    distance: '14 miles South East',
     Rooms: '4 rooms',
     classification: null,
     Opening: 'Close end Oct until Feb but call',
@@ -232,7 +232,7 @@ export default {
   'Baytree House': {
     Who: 'Geraldine or Joe',
     Where: 'Kirkcudbright',
-    'Distance ': '14 miles South East',
+    distance: '14 miles South East',
     Rooms: '4 rooms',
     classification: 'B&B',
     Opening: 'Open all year',
@@ -248,7 +248,7 @@ export default {
   'Gladstone House': {
     Who: 'Hillary & Gordon',
     Where: 'Kirkcudbright',
-    'Distance ': '14 miles South East',
+    distance: '14 miles South East',
     Rooms: '3 rooms',
     classification: '4* B&B',
     Opening: 'Open all year',
@@ -263,7 +263,7 @@ export default {
   Rivergarth: {
     Who: 'Judi & Alan',
     Where: 'Kirkcudbright',
-    'Distance ': '14 miles South East',
+    distance: '14 miles South East',
     Rooms: '4 rooms',
     classification: '4* B&B',
     Opening: 'Open all year',
@@ -278,7 +278,7 @@ export default {
   Glenholm: {
     Who: 'Laurence & Jennifer',
     Where: 'Kirkcudbright',
-    'Distance ': '14 miles South East',
+    distance: '14 miles South East',
     Rooms: '3 rooms',
     classification: 'Dont do star ratings but probably best in Kirkcudbright',
     Opening: 'Open all year',
@@ -293,7 +293,7 @@ export default {
   'High Kirkland Holiday cottage': {
     Who: 'Donald',
     Where: 'Kirkcudbright',
-    'Distance ': '14 miles South East',
+    distance: '14 miles South East',
     Rooms: '8 rooms',
     classification: 'Self catering',
     Opening: 'Open all year',
@@ -308,7 +308,7 @@ export default {
   Selkirk: {
     Who: 'Chris or Joanna',
     Where: 'Kirkcudbright',
-    'Distance ': '14 miles South East',
+    distance: '14 miles South East',
     Rooms: '13 rooms',
     classification: 'Hotel',
     Opening: 'Open all year',
@@ -323,7 +323,7 @@ export default {
   'Arden House': {
     Who: 'Billy',
     Where: 'Kirkcudbright',
-    'Distance ': '14 miles South East',
+    distance: '14 miles South East',
     Rooms: '8 rooms',
     classification: 'Hotel',
     Opening: 'Open all year',
@@ -338,7 +338,7 @@ export default {
   'Stables Guest House': {
     Who: 'Jacqui',
     Where: 'Newton Stewart',
-    'Distance ': '15 miles West',
+    distance: '15 miles West',
     Rooms: '6 rooms',
     classification: 'B&B',
     Opening: 'Open all year',
@@ -353,7 +353,7 @@ export default {
   Rowallan: {
     Who: 'Julie & Rob',
     Where: 'Newton Stewart',
-    'Distance ': '15 miles West',
+    distance: '15 miles West',
     Rooms: '5 rooms',
     classification: 'B&B',
     Opening: 'Open all year',
@@ -368,7 +368,7 @@ export default {
   'Flower Bank': {
     Who: 'Mick & Di',
     Where: 'Newton Stewart',
-    'Distance ': '15 miles West',
+    distance: '15 miles West',
     Rooms: null,
     classification: 'B&B',
     Opening: null,
@@ -383,7 +383,7 @@ export default {
   'Creebridge House': {
     Who: null,
     Where: 'Newton Stewart',
-    'Distance ': '15 miles West',
+    distance: '15 miles West',
     Rooms: '14 rooms',
     classification: '3* Hotel',
     Opening: 'Open all year',
@@ -398,7 +398,7 @@ export default {
   'Crown Hotel': {
     Who: 'Aaron or Laura',
     Where: 'Newton Stewart',
-    'Distance ': '15 miles West',
+    distance: '15 miles West',
     Rooms: '8 rooms',
     classification: '3* Hotel',
     Opening: 'Open all year',
@@ -413,7 +413,7 @@ export default {
   'Kirroughtree House Hotel': {
     Who: 'Morag',
     Where: 'Newton Stewart',
-    'Distance ': '15 miles West',
+    distance: '15 miles West',
     Rooms: '16 rooms',
     classification: '3* Hotel',
     Opening: 'Open all year',
@@ -428,7 +428,7 @@ export default {
   'Muirfad Farmhouse ': {
     Who: 'Sue ',
     Where: 'Newton Stewart ',
-    'Distance ': '9 miles ',
+    distance: '9 miles ',
     Rooms: null,
     classification: 'B&B',
     Opening: 'Open all year',
