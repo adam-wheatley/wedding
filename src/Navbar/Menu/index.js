@@ -103,7 +103,7 @@ const Menu = ({ open, links, comingSoon, setOpen, history: { push } }) => {
           <Burger open={open} setOpen={setOpen} />
         </Grid.Unit>
         <List>
-          <MenuHeader>25.06.2020</MenuHeader>
+          <MenuHeader>25.06.2021</MenuHeader>
           {links.map(({ text, path }) => (
             <ListItem key={path}>
               <Link to={path} onClick={onLinkClick}>
