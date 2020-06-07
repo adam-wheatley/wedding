@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import Grid from 'styled-components-grid';
 
 export const Wrapper = styled.div`
-  padding: 50px 0;
-  margin: 10px;
+  padding: 50px 10px;
   max-width: 80rem;
   margin: 0 auto;
   text-align: center;

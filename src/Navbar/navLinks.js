@@ -25,7 +25,7 @@ export const publicLinks = [
   },
   {
     text: 'GGs YARD',
-    path: '/accomodation',
+    path: '/venue',
     props: {
       border: true,
     },
@@ -39,7 +39,7 @@ export const publicLinks = [
   },
   {
     text: 'HAIR & MAKEUP',
-    path: '/accomodation',
+    path: '/hairandmakeup',
     props: {
       border: true,
     },

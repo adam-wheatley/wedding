@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Img from './img/ash-adam.jpg';
 import Love from './img/love.png';
 import Header from './Header';
-import { Link } from 'react-router-dom';
 import { Wrapper } from './styles/PageStyles';
 import Navbar from './Navbar';
 
@@ -43,27 +42,6 @@ const StyledImg = styled.img`
   margin-bottom: 25px;
 `;
 
-const Button = styled(Link)`
-  display: inline-block;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  border-bottom-right-radius: 225px 15px;
-  border-bottom-left-radius: 15px 255px;
-  border: none;
-  font-family: 'Champagne & Limousines';
-  padding: 15px;
-  margin: 5px 25px;
-  font-weight: 800;
-  background: #626267;
-  color: white;
-  text-decoration: none;
-  min-width: 150px;
-`;
-
-const Otherbtn = styled(Link)`
-  font-family: 'Champagne & Limousines';
-`;
-
 const App = () => {
   return (
     <Wrapper>
@@ -77,12 +55,6 @@ const App = () => {
         <img src={Love} width='25' alt='Love Heart' />
         <Subheading fontSize='25px'>GG's YARD</Subheading>
         <Subheading fontSize='25px'>GATEHOUSE OF FLEET</Subheading>
-        {/* <Otherbtn to='/venue'>Find out more</Otherbtn> */}
-        {/* <Subheading fontSize='20px' ul>
-          RECOMMENDATIONS
-        </Subheading>
-        <Button to='/accomodation'>ACCOMODATION</Button>
-        <Button>HAIR & MAKEUP</Button> */}
       </div>
     </Wrapper>
   );

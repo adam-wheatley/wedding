@@ -5,6 +5,7 @@ import Header from './Header';
 import styled from 'styled-components';
 import Img from './img/gg.jpg';
 import { Wrapper } from './styles/PageStyles';
+import Navbar from './Navbar';
 
 const Subheading = styled.h2`
   font-family: 'Champagne & Limousines';
@@ -48,6 +49,7 @@ const Address = styled.p`
 
 const Venue = () => (
   <Wrapper>
+    <Navbar />
     <div>
       <Header />
       <Subheading fontSize='25px' ul>

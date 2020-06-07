@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Header from './Header';
 import data from './accomodation-data';
 import { Wrapper } from './styles/PageStyles';
+import Navbar from './Navbar';
 
 const Subheading = styled.h2`
   font-family: 'Champagne & Limousines';
@@ -69,6 +70,7 @@ const Accomodation = ({ history }) => {
   }, []);
   return (
     <Wrapper>
+      <Navbar />
       <div>
         <Header />
         <Subheading fontSize='25px' ul>
