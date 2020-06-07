@@ -9,10 +9,12 @@
     "@testing-library/user-event": "^7.1.2",
     "polished": "^3.4.4",
     "react": "^16.13.0",
+    "react-burger-menu": "^2.6.15",
     "react-dom": "^16.13.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.0",
+    "react-use": "^15.1.1",
     "styled-components": "^5.0.1",
     "styled-components-grid": "^2.2.2",
     "styled-normalize": "^8.0.7"

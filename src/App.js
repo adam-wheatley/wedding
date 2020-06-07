@@ -5,8 +5,9 @@ import Love from './img/love.png';
 import Header from './Header';
 import { Link } from 'react-router-dom';
 import { Wrapper } from './styles/PageStyles';
+import Navbar from './Navbar';
 
-const Subheading = styled.h2`
+export const Subheading = styled.h2`
   font-family: 'Champagne & Limousines';
   font-size: ${(p) => (p.fontSize ? p.fontSize : '35px')};
   font-weight: unset;
@@ -66,20 +67,22 @@ const Otherbtn = styled(Link)`
 const App = () => {
   return (
     <Wrapper>
+      <Navbar />
       <div>
         <Header />
         <StyledImg src={Img} />
         <Subheading fontSize='30px'>ASHLEY + ADAM</Subheading>
-        <Subheading fontSize='30px'>25. 06. 2021</Subheading>
+        <Subheading fontSize='25px'>SAVE THE DATE</Subheading>
+        <Subheading fontSize='20px'>25. 06. 2021</Subheading>
         <img src={Love} width='25' alt='Love Heart' />
         <Subheading fontSize='25px'>GG's YARD</Subheading>
         <Subheading fontSize='25px'>GATEHOUSE OF FLEET</Subheading>
-        <Otherbtn to='/venue'>Find out more</Otherbtn>
-        <Subheading fontSize='20px' ul>
+        {/* <Otherbtn to='/venue'>Find out more</Otherbtn> */}
+        {/* <Subheading fontSize='20px' ul>
           RECOMMENDATIONS
         </Subheading>
         <Button to='/accomodation'>ACCOMODATION</Button>
-        <Button>HAIR & MAKEUP</Button>
+        <Button>HAIR & MAKEUP</Button> */}
       </div>
     </Wrapper>
   );
