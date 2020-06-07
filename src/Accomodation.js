@@ -37,8 +37,7 @@ const TileWrapper = styled.div`
   margin: 25px auto;
   max-width: 800px;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px 5px;
+  border-radius: 5px;
   @media only screen and (min-width: 600px) {
     line-height: 0.7;
   }
