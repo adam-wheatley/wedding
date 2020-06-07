@@ -60,7 +60,7 @@ const Venue = () => (
       <Address>
         GG's Yard is around 2 hour's from Glasgow, and 3 hours from Perth.{' '}
         <br />
-        The venue itself is beautiful converted farm with views of the ocean.{' '}
+        The venue itself is a beautiful converted farm with views of the ocean.{' '}
         <br />
         It has unique snugs to stay, but unfortunately only enough for the
         wedding party. <br />
