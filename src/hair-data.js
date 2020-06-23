@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 export default {
   Blusha: {
     url: 'www.blusha.com',
