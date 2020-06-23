@@ -5,6 +5,7 @@ import { Normalize } from 'styled-normalize';
 import App from './App';
 import Accomodation from './Accomodation';
 import Venue from './Venue';
+import Hair from './Hair';
 
 import Globals from './styles/Global';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -20,6 +21,7 @@ ReactDOM.render(
         <Switch>
           <Route exact path='/venue' component={Venue} />
           <Route exact path='/accomodation' component={Accomodation} />
+          <Route exact path='/hairandmakeup' component={Hair} />
           <Route path='/' component={App} />
         </Switch>
       </React.Fragment>
